@@ -11,8 +11,11 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+		<link rel="stylesheet" type="text/css" href="css/less.css/style.css">
 		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<!--<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20170829114530/recaptcha__en.js"></script>-->
+		<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
@@ -114,7 +117,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div clsas="title">
+						<div class="title">
 							<h1><span>Contact Us</span></h1>
 						</div>
 					</div>
@@ -162,7 +165,16 @@
 									<input type="text" name="name" placeholder="Enter your name" />
 									<input type="email" name="email" placeholder="Enter your email" />
 									<textarea placeholder="Text"></textarea>
-									<button class="btn">send</button>
+
+								<div class="col-md-2 col-xs-12 ">
+									<img src="https://laqfoil.com/assets/templates/laqfoil/images/ssl-min.png" alt="" width="113" height="59" class="img-responsive">
+								</div>
+								<div class="col-md-7 col-xs-12 ">
+									<div class="g-recaptcha" data-sitekey="6LfQ2y0UAAAAAO9SvYQtjRSAvZ_p9VRiHMe216Xw"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LfQ2y0UAAAAAO9SvYQtjRSAvZ_p9VRiHMe216Xw&amp;co=aHR0cHM6Ly9sYXFmb2lsLmNvbTo0NDM.&amp;hl=en&amp;v=r20170829114530&amp;size=normal&amp;cb=mrrsdjicue7r" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+								</div>
+								<div class="col-md-3 col-xs-12 ">
+									<button class="btn" id="cf" type="submit">send</button>
+								</div>
 								</form>
 							</div>
 						</div>
@@ -261,6 +273,8 @@
 
 		<!-- Bootstrap js -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="js/captcha.js"></script>-->
 	</body>
 
 </html>

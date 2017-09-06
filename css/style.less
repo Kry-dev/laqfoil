@@ -994,12 +994,12 @@ body{
 	}
 
 }
-.form-block{
+.form-block {
 	font-family: 'helveticaregular';
 	input[type=text],
 	input[type=email],
 	input[type=password],
-	input[type=number]{
+	input[type=number] {
 		font-family: 'helveticaregular';
 		background: #fff;
 		border: 1px solid #d9d9d9;
@@ -1007,7 +1007,7 @@ body{
 		width: 100%;
 		margin: 10px 0;
 	}
-	textarea{
+	textarea {
 		background: #fff;
 		border: 1px solid #d9d9d9;
 		padding: 15px;
@@ -1016,13 +1016,24 @@ body{
 		resize: none;
 		height: 142px;
 	}
-	button{
+	button {
 		float: right;
 		padding: 6px 20px;
 	}
 }
-
-
+.question-form,
+.form-block{
+	.g-recaptcha{
+		transform: scale(0.69);
+   		-webkit-transform: scale(0.69);
+   		transform-origin: 0 0;
+   		-webkit-transform-origin: 0 0;
+	}
+	button.btn{
+		display: block;
+		float: left;
+	}
+}
 
 footer{
 	background: #151213;
@@ -1887,6 +1898,7 @@ footer{
 			margin-left: 4px;
 		}
 	}
+
 	.button-block{
 		margin-top: 22px;
 		text-align: right;
@@ -1894,7 +1906,7 @@ footer{
 			display: inline-block;
 		}
 	}
-	
+
 }
 
 .catalogs{
@@ -1939,6 +1951,7 @@ footer{
 		}
 	}
 }
+
 
 
 /*----------------------------------------
@@ -2010,9 +2023,7 @@ footer{
 			}
 		}
 	}
-
 }
-
 
 
 @media screen and (max-width: 1105px){
@@ -2098,6 +2109,34 @@ footer{
 			}
 		}
 	}
+	.content-top{
+		.title{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			h1{
+				font-size: 24px;
+				span{
+					font-size: 24px;
+					padding: 10px 5px;
+				}
+			}
+		}
+		.button{
+			margin: 30px 0;
+			.btn{
+				font-size: 14px;
+			}
+		}
+	}
+	.form-block{
+		.g-recaptcha{
+			transform: scale(0.8);
+			-webkit-transform: scale(0.8);
+			transform-origin: 0 0;
+			-webkit-transform-origin: 0 0;
+		}
+	}
 
 }
 
@@ -2105,7 +2144,7 @@ footer{
 /*----------------------------------------
 	767 width
 ----------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
 
 	.simplefilter{
 		li{
@@ -2389,6 +2428,14 @@ footer{
 		border-top: 1px solid #F5F5F5;
 		border-bottom: 1px solid #F5F5F5;
 	}
+	.form-block{
+		.g-recaptcha{
+			transform: scale(0.8);
+			-webkit-transform: scale(0.8);
+			transform-origin: 0 0;
+			-webkit-transform-origin: 0 0;
+		}
+	}
 
 
 }
@@ -2412,7 +2459,6 @@ footer{
 			width: 100%;
 		}
 	}
-
 }
 
 
