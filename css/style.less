@@ -1021,13 +1021,19 @@ body{
 		padding: 6px 20px;
 	}
 }
-.question-form,
 .form-block{
 	.g-recaptcha{
 		transform: scale(0.69);
    		-webkit-transform: scale(0.69);
    		transform-origin: 0 0;
    		-webkit-transform-origin: 0 0;
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+		div{
+			display: block;
+			width: 100%!important;
+		}
 	}
 	button.btn{
 		display: block;
@@ -1269,6 +1275,60 @@ footer{
 		}
 	}
 }
+
+.problems-solve{
+	.item{
+		display: table;
+		width: 100%;
+		min-height: 70px;
+		border: 5px solid #0083c1;
+		padding: 2px;
+		margin-bottom: 15px;
+		p.border{
+			position: relative;
+			display: table-cell;
+			font-family: 'helvetica_condbold';
+			font-size: 18px;
+			text-align: center;
+			font-weight: bold;
+			vertical-align: middle;
+			text-transform: uppercase;
+			margin: 0;
+			padding-right: 65px;
+			&:before{
+				display: block;
+				content: "\e013";
+				font-family: "Glyphicons Halflings";
+				font-size: 30px;
+				font-weight: 400;
+				position: absolute;
+				right: 15px;
+				top: 5px;
+				color: rgba(255,255,255,.8);
+				z-index: 55;
+			}
+			&:after{
+				content: "";
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: -1px;
+				width: 58px;
+				height: 58px;
+				z-index: 50;
+				background: #22a5e3; /* Old browsers */
+				background: -moz-linear-gradient(left,  #3ec1ff 0%, #3ec1ff 50%, #22a5e3 50%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3ec1ff), color-stop(50%,#3ec1ff), color-stop(50%,#22a5e3)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left,  #3ec1ff 0%,#3ec1ff 50%,#22a5e3 50%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left,  #3ec1ff 0%,#3ec1ff 50%,#22a5e3 50%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left,  #3ec1ff 0%,#3ec1ff 50%,#22a5e3 50%); /* IE10+ */
+				background: linear-gradient(to right,  #3ec1ff 0%,#3ec1ff 50%,#22a5e3 50%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#22a5e3',GradientType=1 ); /* IE6-9 */
+			}
+		}
+	}
+}
+
 
 .form-bg{
 	
@@ -2137,7 +2197,6 @@ footer{
 			-webkit-transform-origin: 0 0;
 		}
 	}
-
 }
 
 

@@ -1,14 +1,12 @@
-// Resize reCAPTCHA to fit width of container
-// Since it has a fixed width, we're scaling
-// using CSS3 transforms
-// ------------------------------------------
-// captchaScale = containerWidth / elementWidth
 
-function scaleCaptcha(elementWidth) {
+(function scaleCaptcha() {
   // Width of the reCAPTCHA element, in pixels
-  var reCaptchaWidth = 280;
+  var reCaptchaWidth = 270;
   // Get the containing element's width
-	var containerWidth = $('.col-xs-8').width();
+	var containerWidth = function(){
+      $('.col-md-6').width()
+    };
+  console.log(containerWidth);
 
   // Only scale the reCAPTCHA if it won't fit
   // inside the container
@@ -20,15 +18,7 @@ function scaleCaptcha(elementWidth) {
       'transform':'scale('+captchaScale+')'
     });
   }
-}
+}());
+  //
+  //scaleCaptcha();
 
-$(function() {
-
-  // Initialize scaling
-  scaleCaptcha();
-
-  // Update scaling on window resize
-  // Uses jQuery throttle plugin to limit strain on the browser
-  $(window).resize( $.throttle( 100, scaleCaptcha ) );
-
-});
