@@ -9513,56 +9513,79 @@ footer .footer-bot .footer-menu li a {
 }
 
 .clients-reviews {
-    text-align: center
+    text-align: center;
 }
-
 .clients-reviews .item.blue img {
-    border: 3px solid #0083c1
+    border: 3px solid #0083c1;
 }
-
 .clients-reviews .item.blue p {
-    text-align: right
+    text-align: right;
 }
-
 .clients-reviews .item {
-    margin-bottom: 30px
+    overflow: hidden;
+    margin-bottom: 30px;
 }
-
-.clients-reviews .item p.name,
-.clients-reviews .item p.position {
-    font-family: helveticabold;
-    margin: 0;
-    text-transform: uppercase
-}
-
 .clients-reviews .item iframe {
-    width: 100%!important;
-    height: 258px!important
+    width: 100% !important;
+    height: 258px !important;
 }
-
 .clients-reviews .item img {
-    border: 3px solid #fbb203
+    border: 3px solid #fbb203;
 }
-
 .clients-reviews .item p.name {
+    font-family: 'helveticabold';
     color: #0083c1;
-    font-size: 18px
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
 }
-
 .clients-reviews .item p.position {
-    color: #fbb203
+    font-family: 'helveticabold';
+    color: #fbb203;
+    text-transform: uppercase;
+    margin: 0;
 }
-
 .clients-reviews .item p {
     text-align: left;
-    font-family: helvetica_lightregular;
-    line-height: 1.8em
+    font-family: 'helvetica_lightregular';
+    line-height: 1.8em;
 }
-
 .clients-reviews .btn {
-    padding: 12px
+    padding: 12px;
 }
-
+.new-desc-block .item.blue img {
+    border: 3px solid #0083c1;
+}
+.new-desc-block .item {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.new-desc-block .item iframe {
+    width: 100% !important;
+    height: 258px !important;
+}
+.new-desc-block .item img {
+    border: 3px solid #fbb203;
+}
+.new-desc-block .item p.name {
+    font-family: 'helveticabold';
+    color: #0083c1;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.new-desc-block .item p.position {
+    font-family: 'helveticabold';
+    color: #fbb203;
+    text-transform: uppercase;
+    margin: 0;
+}
+.new-desc-block .item p {
+    text-align: center;
+    font-family: 'helvetica_lightregular';
+    line-height: 1.8em;
+}
 .get-offer {
     padding: 50px 0;
     margin: 30px 0
