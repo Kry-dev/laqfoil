@@ -9159,16 +9159,20 @@ footer .footer-bot .footer-menu li a {
     text-transform: uppercase
 }
 .problems-solve .item {
-    display: table;
+    display: flex;
     width: 100%;
     min-height: 70px;
+    max-height: 70px;
+    overflow: hidden;
     border: 5px solid #0083c1;
-    padding: 2px;
+    padding: 2px 67px 2px 2px;
     margin-bottom: 15px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .problems-solve .item p.border {
-    position: relative;
-    display: table-cell;
+    display: flex;
     font-family: 'helvetica_condbold';
     font-size: 18px;
     text-align: center;
@@ -9176,9 +9180,8 @@ footer .footer-bot .footer-menu li a {
     vertical-align: middle;
     text-transform: uppercase;
     margin: 0;
-    padding-right: 65px;
 }
-.problems-solve .item p.border:before {
+.problems-solve .item :before {
     display: block;
     content: "\e013";
     font-family: "Glyphicons Halflings";
@@ -9190,14 +9193,14 @@ footer .footer-bot .footer-menu li a {
     color: rgba(255, 255, 255, 0.8);
     z-index: 55;
 }
-.problems-solve .item p.border:after {
+.problems-solve .item :after {
     content: "";
     display: block;
     position: absolute;
-    right: -1px;
-    top: -1px;
-    width: 58px;
-    height: 58px;
+    right: 2px;
+    top: 2px;
+    width: 56px;
+    height: 56px;
     z-index: 50;
     background: #22a5e3;
     /* Old browsers */
@@ -9216,7 +9219,35 @@ footer .footer-bot .footer-menu li a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#22a5e3', GradientType=1);
     /* IE6-9 */
 }
-
+#problems-solve-slider .slick-slider{
+    -webkit-user-select: auto !important;
+    -moz-user-select: auto !important;
+    user-select: auto !important;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+}
+#problems-solve-slider{
+    position: relative;
+}
+#problems-solve-slider .slick-arrow{
+    position: absolute !important;
+    cursor: pointer;
+    fill: #0083c1;
+    top: 22px;
+}
+#problems-solve-slider .slick-arrow:hover{
+    fill: #0095D9;
+}
+#problems-solve-slider .slick-arrow:active{
+    fill: #006FA6;
+}
+#problems-solve-slider .slick-prev {
+    left: -15px;
+}
+#problems-solve-slider .slick-next {
+    right: -15px;
+}
 .landing-form .errors,
 .landing-form .errors span {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
