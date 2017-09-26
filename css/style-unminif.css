@@ -8133,7 +8133,7 @@ h3 {
 }
 
 #scroller {
-    z-index: 10;
+    z-index: 80;
     width: 45px;
     height: 45px;
     position: fixed;
